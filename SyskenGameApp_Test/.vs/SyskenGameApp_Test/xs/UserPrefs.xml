@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AuthenticationController/FirstAuthentication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Photon/EnterRobby.cs">
     <Files>
       <File FileName="Assets/Scripts/AuthenticationController/LoginInfo.cs" Line="7" Column="23" />
       <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="62" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="16" Column="49" />
-      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="5" Column="42" />
+      <File FileName="Assets/Scripts/Photon/EnterRobby.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
