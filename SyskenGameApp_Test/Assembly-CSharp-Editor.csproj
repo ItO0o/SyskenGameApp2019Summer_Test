@@ -67,24 +67,10 @@
     <Compile Include="Assets\GameSparks\Editor\GameSparksRestWindow.cs" />
     <Compile Include="Assets\GameSparks\Editor\GameSparksSettingsEditor.cs" />
     <Compile Include="Assets\GameSparks\Editor\GameSparksUnityInspector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\Editor\PunStartup.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\AccountService.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\CullAreaEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonConverter.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonEditorUtils.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonGUI.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewHandler.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewInspector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PunSceneSettings.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ReorderableListResources.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ServerSettingsInspector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonAnimatorViewEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbody2DViewEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbodyViewEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonTransformViewEditor.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\Editor\PlayerRoomIndexingInspector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoHub\Editor\PunStartup.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\BezierCurveInspector.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\BezierSplineInspector.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Editor\LineInspector.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -361,6 +347,12 @@
     <Reference Include="BouncyCastle_GameSparks">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/GameSparks/Plugins/BouncyCastle_GameSparks.dll</HintPath>
     </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -378,12 +370,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -414,13 +400,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5BEA0D4A-A1D7-1B11-C313-A626F74FACC9}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{6995C29F-6905-2021-A4E4-65B7C8CC3B62}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{C14B8D0E-87EE-168F-4D93-5A189758926B}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{14251E40-6BE2-F9B6-BEDB-4852E0DCEF20}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonWebSocket.csproj">
+      <Project>{EA4956AA-EED0-51BA-7F9A-4D29FF4512BC}</Project>
+      <Name>PhotonWebSocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{ED836F38-1226-3FBE-D2BC-D009434CB478}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{F4C61C8A-D80F-575B-1222-6A496B782633}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{F95A4318-0CBB-982C-79D5-6323E3683D2F}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{6B202935-41C9-E8DE-F0F4-87967764F1FF}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{A0126BB4-ABC8-E74D-BDF6-9ECF31C47F3C}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -323,10 +323,10 @@
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/GameSparks/Plugins/BouncyCastle_GameSparks.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

@@ -5,7 +5,7 @@
       <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="62" Column="1" />
       <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="22" Column="2" />
       <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="5" Column="42" />
-      <File FileName="Assets/Scripts/Photon/EnterRobby.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Photon/EnterRobby.cs" Line="70" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

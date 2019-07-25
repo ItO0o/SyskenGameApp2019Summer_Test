@@ -80,151 +80,117 @@
     <Compile Include="Assets\GameSparks\Platforms\WebGL\WebGLWebSocket.cs" />
     <Compile Include="Assets\GameSparks\Platforms\WebSocketController.cs" />
     <Compile Include="Assets\GameSparks\TestUI\GameSparksTestUI.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\ColorPerPlayer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\ColorPerPlayerApply.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\OnAwakePhysicsSettings.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\OnClickFlashRpc.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\OnDoubleclickDestroy.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\ClickAndDrag.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\DemoOwnershipGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\HighlightOwnedGameObj.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\InstantiateCube.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\MaterialPerOwner.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\OnClickDisableObj.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\OnClickRequestOwnership.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\OnClickRightDestroy.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChangeOwner\ShowInfoOfPlayer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\ChannelSelector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\ChatGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\FriendItem.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoChat\NamePickGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoFriendsAndCustomAuth\GUICustomAuth.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoFriendsAndCustomAuth\GUIFriendFinding.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoFriendsAndCustomAuth\GUIFriendsInRoom.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoFriendsAndCustomAuth\OnClickCallMethod.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\HubGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\MoveCam.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\Scripts\DemoHubManager.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\Scripts\ToDemoHubButton.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\ToHubButton.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoMecanim\Scripts\DemoMecanimGUI.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\MessageOverlay.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\OnCollideSwitchTeam.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\OnPickedUpScript.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\PickupCamera.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\PickupController.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\PickupDemoGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoPickup\Scripts\PickupTriggerForward.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Scripts\RpsCore.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Scripts\RpsDebug.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Scripts\RpsDemoConnect.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRPGMovement\Scripts\DemoRPGMovement.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRPGMovement\Scripts\RPGCamera.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoRPGMovement\Scripts\RPGMovement.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\CubeExtra.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\CubeInter.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\CubeLerp.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\DragToMove.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\IELdemo.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoWorker\Scripts\Game\Player\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoWorker\Scripts\Game\Player\ThirdPersonController.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoWorker\Scripts\Game\Player\ThirdPersonNetwork.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoWorker\Scripts\WorkerInGame.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\DemoWorker\Scripts\WorkerMenu.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\AudioRpc.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\ClickDetector.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\GameLogic.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\Monstergame\Resources\Scripts\myThirdPersonController.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\NetworkCharacter.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\OnClickLoadSomething.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\RandomMatchmaker.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\CameraWork.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\Launcher.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\LoaderAnime.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\PlayerAnimatorManager.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\PlayerNameInputField.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\PunBasics-Tutorial\Scripts\PlayerUI.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\Shared Assets\Scripts\IdleRunJump.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\Shared Assets\Scripts\PlayerDiamond.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Demos\Shared Assets\Scripts\PlayerVariables.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\FriendInfo.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\GizmoType.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\LoadbalancingPeer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonClasses.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonLagSimulationGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonPing.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonPlayer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonStatsGui.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonStreamQueue.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\PingCloudRegions.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Room.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RoomInfo.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\RPC.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\ServerSettings.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\SocketUdp.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonAnimatorView.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonRigidbody2DView.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonRigidbodyView.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformView.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewPositionControl.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewPositionModel.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewRotationControl.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewRotationModel.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewScaleControl.cs" />
-    <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Views\PhotonTransformViewScaleModel.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ConnectAndJoinRandom.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\CullArea.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InputToEvent.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\InRoomChat.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ManualPhotonViewAllocator.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\MoveByKeys.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\NetworkCullingHandler.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickDestroy.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnClickInstantiate.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnJoinedInstantiate.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\OnStartDelete.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\PlayerRoomIndexing.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItem.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItemSimple.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PickupItemSyncer.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PointedAtGameObjectInfo.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunPlayerScores.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunTeams.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\PunTurnManager.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\QuitOnEscapeOrBack.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\ShowStatusWhenConnecting.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\ButtonInsideScrollList.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\TextButtonTransition.cs" />
-    <Compile Include="Assets\Photon Unity Networking\UtilityScripts\UI\TextToggleIsOnTransition.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChannelCreationOptions.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChannelWellKnownProperties.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatChannel.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatClient.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatDisconnectCause.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatEventCode.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatOperationCode.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatParameterCode.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatPeer.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
-    <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
-    <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\AsteroidsGame.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Game\Asteroid.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Game\AsteroidsGameManager.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Game\Bullet.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Game\PlayerOverviewPanel.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Game\Spaceship.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Lobby\LobbyMainPanel.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Lobby\PlayerListEntry.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoAsteroids\Scripts\Lobby\RoomListEntry.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoHub\Scripts\DemoHubManager.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoHub\Scripts\ToDemoHubButton.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\Block.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\Cluster.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\IngameControlPanel.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\Noise.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\ProceduralController.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoProcedural\Scripts\WorldGenerator.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Bezier.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\BezierControlPointMode.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\BezierCurve.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\BezierSpline.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\Line.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\SplinePosition.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\BezierCurve\SplineWalker.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\SlotLanes.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Scripts\SlotRacerSplashScreen.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\CameraWork.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\Launcher.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\LoaderAnime.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\PlayerAnimatorManager.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\PlayerNameInputField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunBasics-Tutorial\Scripts\PlayerUI.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Forms\ConnectToRegionUIForm.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Forms\CreateRoomUiForm.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Forms\LoadLevelUIForm.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Forms\SetRoomCustomPropertyUIForm.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Forms\UserIdUiForm.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\PunCockpit.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\AutoSyncSceneToggle.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\BackgroundTimeOutField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\CrcCheckToggle.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\CurrentRoom\CurrentRoomIsOpenToggle.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\CurrentRoom\CurrentRoomIsVisibleToggle.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\DocLinkButton.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\GameVersionField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\Generic\BoolInputField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\Generic\IntInputField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\Generic\StringInputField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\Generic\ToggleExpand.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\LayoutElementMatchSize.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\NickNameField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\OnlineDocButton.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\SendRateField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Autonomous UI\SendRateOnSerializeField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Controllers\PlayerDetailsController.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\InfosPanelPlaceholder.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\FriendListCell.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\FriendListView.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\PlayerListCell.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\PlayerListView.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\PropertyCell.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\RegionListCell.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\RegionListView.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\RoomListCell.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\Lists\RoomListView.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\PropertyFields\UserIdField.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\AppVersionProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\BestRegionInPrefsProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CloudRegionProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CountOfPlayersInRoomProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CountOfPlayersOnMasterProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CountOfPlayersProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CountOfRoomsProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomAutoCleanupProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomEmptyRoomTtlProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomExpectedUsersProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomIsOfflineProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomIsOpenProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomIsVisibleProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomMasterClientIdProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomMaxPlayersProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomNameProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomPlayerCountProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomPlayerTtlProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\CurrentRoomPropertiesListedInLobbyProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\GameVersionProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\IsConnectedAndReadyProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\IsConnectedProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\OfflineModeProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\PingProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\PropertyListenerBase.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\ServerAddressProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ReadOnlyProperties\ServerProperty.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ScoreHelper.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ThirdParty\PunCockpitEmbed.cs" />
+    <Compile Include="Assets\Photon\PhotonUnityNetworking\Demos\Shared Assets\Scripts\DocLinks.cs" />
     <Compile Include="Assets\Scripts\AuthenticationController\FirstAuthentication.cs" />
     <Compile Include="Assets\Scripts\AuthenticationController\LoginInfo.cs" />
     <Compile Include="Assets\Scripts\AuthenticationController\StaticInfo.cs" />
@@ -232,15 +198,15 @@
     <Compile Include="Assets\Scripts\Photon\EnterRobby.cs" />
     <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
     <None Include="Assets\GameSparks\Plugins\Metro\GameSparksRT.xml" />
-    <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
-    <None Include="Assets\Photon Unity Networking\link.xml" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Kenney Assets\Copyrights.txt" />
     <None Include="Assets\GameSparks\README.txt" />
-    <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
-    <None Include="Assets\Photon Unity Networking\Demos\Shared Assets\Skin\3dText.shader" />
-    <None Include="Assets\Photon Unity Networking\readme.txt" />
+    <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\Demos\Shared Assets\Skin\eurof_tt.txt" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\Demos\Shared Assets\Skin\3dText.shader" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
     <None Include="Assets\GameSparks\link.xml" />
-    <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />
-    <None Include="Assets\Photon Unity Networking\changelog.txt" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -460,17 +426,17 @@
     <Reference Include="BouncyCastle_GameSparks">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/GameSparks/Plugins/BouncyCastle_GameSparks.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>/Users/k17014kk/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
@@ -501,9 +467,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5BEA0D4A-A1D7-1B11-C313-A626F74FACC9}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{C14B8D0E-87EE-168F-4D93-5A189758926B}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{14251E40-6BE2-F9B6-BEDB-4852E0DCEF20}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonWebSocket.csproj">
+      <Project>{EA4956AA-EED0-51BA-7F9A-4D29FF4512BC}</Project>
+      <Name>PhotonWebSocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{ED836F38-1226-3FBE-D2BC-D009434CB478}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{F4C61C8A-D80F-575B-1222-6A496B782633}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{F95A4318-0CBB-982C-79D5-6323E3683D2F}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{6B202935-41C9-E8DE-F0F4-87967764F1FF}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{A0126BB4-ABC8-E74D-BDF6-9ECF31C47F3C}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
