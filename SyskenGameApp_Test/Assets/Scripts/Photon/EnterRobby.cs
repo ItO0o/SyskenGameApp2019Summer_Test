@@ -20,9 +20,11 @@ public class EnterRobby : MonoBehaviourPunCallbacks {
         PhotonNetwork.ConnectUsingSettings();
     }
 
+    public void StartMatching() {
+        CreateRoom();
+    }
     // マスターサーバーへの接続が成功した時に呼ばれるコールバック
     public override void OnConnectedToMaster() {
-        CreateRoom();
     }
 
     public void CreateRoom(){
@@ -54,6 +56,7 @@ public class EnterRobby : MonoBehaviourPunCallbacks {
             return;
         }
         if (roomCnt > 5){
+            Debug.Log("Search Room");
             roomCnt = 0;
             state = SearchState.JoinRoom;
         }
