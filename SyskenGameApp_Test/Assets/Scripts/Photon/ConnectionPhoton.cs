@@ -17,6 +17,7 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
 
     private void Start() {
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
+        PhotonNetwork.NickName = StaticInfo.userInfo.dispName;
         PhotonNetwork.ConnectUsingSettings();
     }
     // マスターサーバーへの接続が成功した時に呼ばれるコールバック
@@ -58,10 +59,5 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
             roomCnt++;
             SearchRoom();
         }
-    }
-
-    void OnPhotonCreateRoomFailed(object[] codeAndMsg) {
-        //codeAndMsg[0]は エラーコード です。(int)
-        //codeAndMsg[1]は デバッグメッセージ です。(string)
     }
 }

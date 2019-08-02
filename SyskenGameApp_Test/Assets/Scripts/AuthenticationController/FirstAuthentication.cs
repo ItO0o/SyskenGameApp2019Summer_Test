@@ -7,6 +7,7 @@ using GameSparks.Api.Responses;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class FirstAuthentication : MonoBehaviour {
 
@@ -71,6 +72,8 @@ public class FirstAuthentication : MonoBehaviour {
             writer.Close();
 
             Debug.Log("New Player:" + userId.ToString());
+
+            SceneManager.LoadScene("Title");
         }
     }
 }

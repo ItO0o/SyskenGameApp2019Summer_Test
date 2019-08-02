@@ -1,59 +1,88 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class PlayerMove : MonoBehaviour {
+public class PlayerMove : MonoBehaviour
+{
     [SerializeField]
-    float speed, acceleration = 0, rate, forwardMaxSpeed, backMaxSpeed;
-    
+    float speed, forwardAcceleration = 0, backAcceleration = 0, rate, forwardMaxSpeed, backMaxSpeed;
+    private PhotonView m_photonView;
+    void Start()
+    {
+        m_photonView = this.GetComponent<PhotonView>();
+    }
 
-
-#if UNITY_EDITOR
+//#if UNITY_EDITOR || UNITY_STANDALONE_WIN
     // Update is called once per frame
-    void FixedUpdate() {
-        if ((Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) || (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))) {
-            acceleration = 0;
+    void FixedUpdate()
+    {
+        if (!m_photonView.IsMine)
+        {
+            return;
         }
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
-            acceleration = 0;
-        }
-        if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom) {
-            if (Input.GetKey(KeyCode.A)) {
-                MoveForward();
-            }
-            if (Input.GetKey(KeyCode.D)) {
+        if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom)
+        {
+            if (Input.GetKey(KeyCode.A))
+            {
                 MoveBack();
             }
-        }else if(ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
-            if (Input.GetKey(KeyCode.D)) {
+            else
+            {
+                this.backAcceleration = 0;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                MoveForward();
+            }
+            else
+            {
+                this.forwardAcceleration = 0;
+            }
+        }
+        else if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom)
+        {
+            if (Input.GetKey(KeyCode.D))
+            {
                 MoveBack();
             }
-            if (Input.GetKey(KeyCode.A)) {
+            else
+            {
+                this.backAcceleration = 0;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
                 MoveForward();
+            }
+            else
+            {
+                this.forwardAcceleration = 0;
             }
         }
     }
-#endif
-    // Use this for initialization
-    void Start() {
+//#endif
 
+    void MoveForward()
+    {
+        if (this.forwardAcceleration < this.forwardMaxSpeed)
+        {
+            this.forwardAcceleration += rate;
+        }
+        this.transform.position += this.transform.right * this.speed * this.forwardAcceleration;
     }
 
-    void MoveForward() {
-        if (acceleration < forwardMaxSpeed) {
-            acceleration += rate;
-            }
-        this.transform.position += this.transform.right * speed * acceleration;
+    void MoveBack()
+    {
+        if (this.backAcceleration < this.backMaxSpeed)
+        {
+            this.backAcceleration += rate;
+        }
+        this.transform.position += -this.transform.right * this.speed * this.backAcceleration;
     }
 
-    void MoveBack() {
-        if (acceleration < backMaxSpeed) {
-            acceleration += rate;
-            }
-        this.transform.position += -this.transform.right * speed * acceleration;
-    }
-
-    private void Move() {
+    private void Move()
+    {
 
     }
 }

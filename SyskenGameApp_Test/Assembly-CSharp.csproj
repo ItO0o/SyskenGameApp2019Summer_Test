@@ -188,7 +188,12 @@
      <Compile Include="Assets\Scripts\AuthenticationController\StaticInfo.cs" />
      <Compile Include="Assets\Scripts\AuthenticationController\TransitionSelector.cs" />
      <Compile Include="Assets\Scripts\Photon\ConnectionPhoton.cs" />
+     <Compile Include="Assets\Scripts\Photon\InstPlayers.cs" />
+     <Compile Include="Assets\Scripts\Photon\PhotonBattleManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\UI\FadeAnimation.cs" />
+     <Compile Include="Assets\Scripts\UI\HideStart.cs" />
+     <Compile Include="Assets\Scripts\UI\TrantisionScene.cs" />
      <None Include="Assets\GameSparks\Plugins\GameSparksRT.xml" />
      <None Include="Assets\GameSparks\Plugins\Metro\GameSparksRT.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
