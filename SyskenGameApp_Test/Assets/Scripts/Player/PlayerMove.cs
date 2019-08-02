@@ -17,14 +17,14 @@ public class PlayerMove : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
             acceleration = 0;
         }
-        if (ConnectionPhoton.state == ConnectionPhoton.SearchState.JoinRoom) {
+        if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom) {
             if (Input.GetKey(KeyCode.A)) {
                 MoveForward();
             }
             if (Input.GetKey(KeyCode.D)) {
                 MoveBack();
             }
-        }else if(ConnectionPhoton.state == ConnectionPhoton.SearchState.CreateRoom) {
+        }else if(ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
             if (Input.GetKey(KeyCode.D)) {
                 MoveBack();
             }
