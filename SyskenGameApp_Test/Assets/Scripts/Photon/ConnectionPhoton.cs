@@ -6,9 +6,9 @@ using UnityEngine;
 public class ConnectionPhoton : MonoBehaviourPunCallbacks {
 
     string roomName = "";
-    int roomCnt = 0;
+    int roomCnt = 1;
     string searchRoomName = "room";
-    public static SearchState searchState = SearchState.CreateRoom;
+    public static SearchState searchState = SearchState.JoinRoom;
 
     public enum SearchState {
         CreateRoom,
@@ -27,7 +27,6 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
 
     public void CreateRoom(){
         Debug.Log("Create room No." + roomCnt);
-        // "room"という名前のルームに参加する（ルームが無ければ作成してから参加する）
         RoomOptions room = new RoomOptions();
         room.MaxPlayers = 2;
         PhotonNetwork.CreateRoom(searchRoomName + roomCnt, room, TypedLobby.Default);
@@ -40,6 +39,7 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
 
     // マッチングが成功した時に呼ばれるコールバック
     public override void OnJoinedRoom() {
+        Debug.Log("Joined room No." + roomCnt);
         PhotonNetwork.LoadLevel("Battle");
     }
 
@@ -47,15 +47,15 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
         Debug.Log("Failed join No." + roomCnt);
-        roomCnt++;
         if (roomCnt > PhotonNetwork.CountOfRooms)
         {
             searchState = SearchState.CreateRoom;
-            roomCnt = 0;
+            roomCnt = PhotonNetwork.CountOfRooms + 1;
             CreateRoom();
         }
         if (searchState == SearchState.JoinRoom)
         {
+            roomCnt++;
             SearchRoom();
         }
     }
