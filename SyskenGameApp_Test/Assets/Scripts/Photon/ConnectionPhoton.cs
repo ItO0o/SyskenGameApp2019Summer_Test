@@ -43,7 +43,9 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
         Debug.Log("Joined room No." + roomCnt);
         PhotonNetwork.LoadLevel("Battle");
     }
-
+    public override void OnCreateRoomFailed(short returnCode, string message) {
+        Debug.Log("Failed Create room No." + roomCnt);
+    }
     //JoinRoomが失敗したときに呼ばれる
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
