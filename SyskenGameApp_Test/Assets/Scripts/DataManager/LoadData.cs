@@ -44,6 +44,7 @@ public class LoadData : MonoBehaviour {
                  StaticInfo.userData.rate = playerData.rate;
                  StaticInfo.userData.gold = playerData.gold;
                  Debug.Log("Load user data (rate:" + playerData.rate + "gold:" + playerData.gold + ")");
+                 StaticInfo.callback = "Loaded data";
              } else {
                  Debug.Log("Error Load Player Data");
                  check = false;
