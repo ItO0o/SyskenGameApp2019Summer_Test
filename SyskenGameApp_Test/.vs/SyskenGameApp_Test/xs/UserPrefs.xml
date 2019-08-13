@@ -1,17 +1,21 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataManager/SendData.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gs2/gs2-unity-sdk/Prefab/Gs2Money/Gs2MoneyController.cs">
     <Files>
       <File FileName="Assets/Scripts/AuthenticationController/LoginInfo.cs" Line="10" Column="28" />
-      <File FileName="Assets/Scripts/AuthenticationController/PlayerData.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/AuthenticationController/PlayerData.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/AuthenticationController/Item.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="8" Column="55" />
-      <File FileName="Assets/Scripts/AuthenticationController/Test.cs" Line="46" Column="12" />
-      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="20" Column="13" />
+      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AuthenticationController/Test.cs" Line="66" Column="14" />
+      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="77" Column="10" />
-      <File FileName="Assets/Save/SaveData.json" Line="1" Column="28" />
+      <File FileName="Assets/Save/SaveData.json" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager/SendData.cs" Line="10" Column="24" />
-      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="6" Column="5" />
+      <File FileName="Assets/Scripts/DataManager/SendData.cs" Line="58" Column="25" />
+      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="20" Column="22" />
+      <File FileName="Assets/Scripts/AuthenticationController/TesTes.cs" Line="27" Column="51" />
+      <File FileName="Assets/GameSparks/Platforms/PlatformBase.cs" Line="295" Column="1" />
+      <File FileName="Assets/Gs2/gs2-unity-sdk/Gs2Money/Client.cs" Line="1" Column="1" />
+      <File FileName="Assets/Gs2/gs2-unity-sdk/Prefab/Gs2Money/Gs2MoneyController.cs" Line="96" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
