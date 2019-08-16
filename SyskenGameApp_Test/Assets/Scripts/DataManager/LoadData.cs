@@ -9,15 +9,11 @@ using GameSparks.Api.Responses;
 /// Load data or info to GameSparks.
 /// </summary>
 public class LoadData : MonoBehaviour {
-    //エラーチェック用
-    private bool check;
-
     /// <summary>
     /// ユーザーデータをGameSparkより引き出してStaticフィールドに反映します
     /// </summary>
     /// <returns><c>true</c>, ロード成功, <c>false</c> ロード失敗.</returns>
-    public bool LoadUserInfo() {
-        check = true;
+    public void LoadUserInfo() {
         //とりあえず保存先ユーザー指定,認証
         new AuthenticationRequest()
         .SetPassword("0000")
@@ -27,7 +23,6 @@ public class LoadData : MonoBehaviour {
                 Debug.Log("Login successfully");
             } else {
                 Debug.Log("Error login");
-                check = false;
             }
         });
         //イベントリクエスト
@@ -47,23 +42,15 @@ public class LoadData : MonoBehaviour {
                  StaticInfo.callback = "Loaded data";
              } else {
                  Debug.Log("Error Load Player Data");
-                 check = false;
              }
          });
-
-        if (check == false) {
-            return false;
-        } else {
-            return true;
-        }
     }
 
     /// <summary>
     /// Loads the inventory.
     /// </summary>
     /// <returns><c>true</c>, if inventory was loaded, <c>false</c> otherwise.</returns>
-    public bool LoadInventory() {
-        check = true;
+    public void LoadInventory() {
         //イベントリクエスト
         new LogEventRequest()
           .SetEventKey("LoadInventory")
@@ -86,14 +73,7 @@ public class LoadData : MonoBehaviour {
                   }
               } else {
                   Debug.Log("Error Load Player Data");
-                  check = false;
               }
           });
-
-        if (check == false) {
-            return false;
-        } else {
-            return true;
-        }
     }
 }

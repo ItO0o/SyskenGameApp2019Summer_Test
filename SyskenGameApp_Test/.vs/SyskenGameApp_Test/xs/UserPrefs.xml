@@ -1,26 +1,57 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gs2/gs2-unity-sdk/Prefab/Gs2Money/Gs2MoneyController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleSystem/InstCustomParts.cs">
     <Files>
-      <File FileName="Assets/Scripts/AuthenticationController/LoginInfo.cs" Line="10" Column="28" />
-      <File FileName="Assets/Scripts/AuthenticationController/PlayerData.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/Item.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/UI/CustomPartsView.cs" Line="18" Column="36" />
+      <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" Line="11" Column="28" />
+      <File FileName="Assets/Scripts/CustomSystem/CustomFuso.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/TrantisionScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/StatsText.cs" />
+      <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="65" Column="1" />
+      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="14" Column="10" />
+      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="64" Column="49" />
+      <File FileName="Assets/Scripts/DataManager/SendData.cs" Line="67" Column="46" />
+      <File FileName="Assets/Scripts/DataManager/LocalInventory.cs" Line="38" Column="14" />
       <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/Test.cs" Line="66" Column="14" />
-      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="77" Column="10" />
-      <File FileName="Assets/Save/SaveData.json" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager/SendData.cs" Line="58" Column="25" />
-      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="20" Column="22" />
-      <File FileName="Assets/Scripts/AuthenticationController/TesTes.cs" Line="27" Column="51" />
-      <File FileName="Assets/GameSparks/Platforms/PlatformBase.cs" Line="295" Column="1" />
-      <File FileName="Assets/Gs2/gs2-unity-sdk/Gs2Money/Client.cs" Line="1" Column="1" />
-      <File FileName="Assets/Gs2/gs2-unity-sdk/Prefab/Gs2Money/Gs2MoneyController.cs" Line="96" Column="1" />
+      <File FileName="Assets/Scripts/CustomSystem/ViewMyFuso.cs" Line="9" Column="19" />
+      <File FileName="Assets/Save/CustomData.json" Line="2" Column="1" />
+      <File FileName="Assets/Scripts/DataManager/Serialization.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="16" Column="5" />
+      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="18" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SyskenGameApp_Test" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Photon" expanded="True">
+                <Node name="PhotonUnityNetworking" expanded="True">
+                  <Node name="Code" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="AuthenticationController" expanded="True" />
+                <Node name="BattleSystem" expanded="True">
+                  <Node name="InstCustomParts.cs" selected="True" />
+                </Node>
+                <Node name="CustomSystem" expanded="True" />
+                <Node name="DataManager" expanded="True" />
+                <Node name="Photon" expanded="True" />
+                <Node name="UI" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SyskenGameApp_Test" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="60d13740-5a0c-4933-90ef-db420cb027a0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

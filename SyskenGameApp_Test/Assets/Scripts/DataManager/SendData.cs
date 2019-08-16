@@ -9,15 +9,12 @@ using GameSparks.Api.Responses;
 /// Send data or info to GameSparks.
 /// </summary>
 public class SendData : MonoBehaviour {
-    //エラーチェック用
-    private bool check;
 
     /// <summary>
     /// Sends the user info.
     /// </summary>
     /// <returns><c>true</c>, if user info was sent, <c>false</c> otherwise.</returns>
-    public bool SendUserInfo() {
-        check = true;
+    public void SendUserInfo() {
         //とりあえず保存先ユーザー指定,認証
         new AuthenticationRequest()
        .SetPassword("0000")
@@ -27,7 +24,6 @@ public class SendData : MonoBehaviour {
                        Debug.Log("Authentication successfully");
                    } else {
                        Debug.Log("Error authentication");
-                       check = false;
                    }
                });
 
@@ -48,25 +44,15 @@ public class SendData : MonoBehaviour {
                         Debug.Log("Save data successfully");
                     } else {
                         Debug.Log("Error save player data");
-                        check = false;
                     }
                 });
-
-        if (check == false) {
-            return false;
-        } else {
-            return true;
-        }
     }
 
     /// <summary>
     /// Sends the inventory data.
     /// </summary>
     /// <returns><c>true</c>, if inventory data was sent, <c>false</c> otherwise.</returns>
-    public bool SendInventoryData() {
-
-        check = true;
-
+    public void SendInventoryData() {
         new AuthenticationRequest()
             .SetPassword("0000")
             .SetUserName(StaticInfo.userInfo.userName)
@@ -75,7 +61,6 @@ public class SendData : MonoBehaviour {
                 Debug.Log("Login successfully");
             } else {
                 Debug.Log("Error login");
-                    check = false;
             }
         });
         //データ整形（シリアライズ込み）
@@ -92,11 +77,5 @@ public class SendData : MonoBehaviour {
                 Debug.Log("Error save inventory");
             }
         });
-
-        if (check == false) {
-            return false;
-        } else {
-            return true;
-        }
     }
 }
