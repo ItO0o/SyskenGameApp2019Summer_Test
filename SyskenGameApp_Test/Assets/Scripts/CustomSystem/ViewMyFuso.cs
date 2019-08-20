@@ -10,6 +10,7 @@ public class ViewMyFuso : MonoBehaviour {
         StaticInfo.myCustom = new List<string>(); 
         GameObject prefab = Resources.Load<GameObject>("Kongo");
         myShip = Instantiate(prefab);
+        myShip.name = StaticInfo.playerName;
         //TestCustom();
         UpdateView();
     }
@@ -25,7 +26,7 @@ public class ViewMyFuso : MonoBehaviour {
 
     public void UpdateView() {
         float y = 0;
-        DestroyImmediate(GameObject.Find("Kongo(Clone)").transform.FindChild("CustomParts").gameObject);
+        DestroyImmediate(GameObject.Find(StaticInfo.playerName).transform.Find("CustomParts").gameObject);
         GameObject customParts = new GameObject();
         //customParts.transform.name = "CustomParts";
         //GameObject instParts = Instantiate(customParts);
@@ -36,6 +37,6 @@ public class ViewMyFuso : MonoBehaviour {
             y += 1;
 
         }
-        customParts.transform.parent = GameObject.Find("Kongo(Clone)").transform;
+        customParts.transform.parent = GameObject.Find(StaticInfo.playerName).transform;
     }
 }

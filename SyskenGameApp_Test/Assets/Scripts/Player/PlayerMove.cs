@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour {
         if (!m_photonView.IsMine) {
             return;
         }
-        Debug.Log(ConnectionPhoton.searchState);
+
         if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
             if (Input.GetKey(KeyCode.D) && acceleration >  -backMaxSpeed) {
                 this.acceleration -= backAcceleration;

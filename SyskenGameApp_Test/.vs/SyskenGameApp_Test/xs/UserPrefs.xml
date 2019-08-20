@@ -1,41 +1,48 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleSystem/InstCustomParts.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AuthenticationController/StaticInfo.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI/CustomPartsView.cs" Line="18" Column="36" />
-      <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" Line="11" Column="28" />
-      <File FileName="Assets/Scripts/CustomSystem/CustomFuso.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UI/TrantisionScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UI/StatsText.cs" />
-      <File FileName="Assets/Scripts/AuthenticationController/FirstAuthentication.cs" Line="65" Column="1" />
-      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="14" Column="10" />
-      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="64" Column="49" />
-      <File FileName="Assets/Scripts/DataManager/SendData.cs" Line="67" Column="46" />
-      <File FileName="Assets/Scripts/DataManager/LocalInventory.cs" Line="38" Column="14" />
-      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CustomSystem/ViewMyFuso.cs" Line="9" Column="19" />
-      <File FileName="Assets/Save/CustomData.json" Line="2" Column="1" />
-      <File FileName="Assets/Scripts/DataManager/Serialization.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="16" Column="5" />
-      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="9" Column="19" />
+      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/Photon/PhotonBattleManager.cs" Line="8" Column="63" />
+      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="12" Column="19" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Photon/ConnectionPhoton.cs" Line="16" Column="6" />
+      <File FileName="Assets/Scripts/UI/PrintResult.cs" Line="9" Column="19" />
+      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="13" Column="2" />
+      <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" Line="14" Column="31" />
+      <File FileName="Assets/GameSparks/Platforms/DefaultPlatform.cs" Line="1" Column="1" />
+      <File FileName="Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs" Line="2042" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SyskenGameApp_Test" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="GameSparks" expanded="True">
+                <Node name="Platforms" expanded="True" />
+              </Node>
               <Node name="Photon" expanded="True">
+                <Node name="PhotonRealtime" expanded="True">
+                  <Node name="Code" expanded="True" />
+                </Node>
                 <Node name="PhotonUnityNetworking" expanded="True">
                   <Node name="Code" expanded="True" />
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="AuthenticationController" expanded="True" />
-                <Node name="BattleSystem" expanded="True">
-                  <Node name="InstCustomParts.cs" selected="True" />
+                <Node name="AuthenticationController" expanded="True">
+                  <Node name="StaticInfo.cs" selected="True" />
                 </Node>
+                <Node name="BattleSystem" expanded="True" />
                 <Node name="CustomSystem" expanded="True" />
                 <Node name="DataManager" expanded="True" />
+                <Node name="ItemAction" expanded="True">
+                  <Node name="Item1" expanded="True" />
+                </Node>
                 <Node name="Photon" expanded="True" />
+                <Node name="Player" expanded="True" />
                 <Node name="UI" expanded="True" />
               </Node>
             </Node>

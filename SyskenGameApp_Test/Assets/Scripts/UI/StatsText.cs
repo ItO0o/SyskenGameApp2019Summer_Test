@@ -8,7 +8,9 @@ public class StatsText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //GameObject text = GameObject.Find("Stats_Text");
-	}
+        this.GetComponent<Text>().text = "Stats Loading";
+
+    }
     public static void FixedUpdate()
     {
         StaticInfo.callback = "";

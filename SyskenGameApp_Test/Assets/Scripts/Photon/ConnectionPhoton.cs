@@ -16,9 +16,17 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
     }
 
     private void Start() {
+        roomName = ""
+        roomCnt = 1;
+        searchRoomName = "room";
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する
+        searchState = SearchState.JoinRoom;
         PhotonNetwork.NickName = StaticInfo.userInfo.dispName;
-        PhotonNetwork.ConnectUsingSettings();
+        if (PhotonNetwork.IsConnected) {
+            SearchRoom();
+        } else {
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
     // マスターサーバーへの接続が成功した時に呼ばれるコールバック
     public override void OnConnectedToMaster() {
@@ -30,7 +38,11 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
         Debug.Log("Create room No." + roomCnt);
         RoomOptions room = new RoomOptions();
         room.MaxPlayers = 2;
+        ExitGames.Client.Photon.Hashtable customProp = new ExitGames.Client.Photon.Hashtable();
+        customProp.Add("Judge", "Non");
+        room.CustomRoomProperties = customProp;
         PhotonNetwork.CreateRoom(searchRoomName + roomCnt, room, TypedLobby.Default);
+        searchState = SearchState.CreateRoom;
     }
 
     public void SearchRoom() {
@@ -52,7 +64,6 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
         Debug.Log("Failed join No." + roomCnt);
         if (roomCnt > PhotonNetwork.CountOfRooms)
         {
-            searchState = SearchState.CreateRoom;
             roomCnt = PhotonNetwork.CountOfRooms + 1;
             CreateRoom();
         }

@@ -6,18 +6,20 @@ using Photon.Realtime;
 public class InstPlayers : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+        GameObject instObj;
         if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom)
         {
-            PhotonNetwork.Instantiate("Kongo", new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
-        }else if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom)
+            instObj = PhotonNetwork.Instantiate("Kongo", new Vector3(-10, 0, 0), new Quaternion(0, 0, 0, 0));
+            instObj.name = "Player2";
+            StaticInfo.playerName = instObj.name;
+        } else if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom)
         {
-            PhotonNetwork.Instantiate("Kongo", new Vector3(0, 0, 0), new Quaternion(0, 180, 0, 0));
+            instObj = PhotonNetwork.Instantiate("Kongo", new Vector3(10, 0, 0), new Quaternion(0, 180, 0, 0));
+            instObj.name = "Player1";
+            StaticInfo.playerName = instObj.name;
         }
+        
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

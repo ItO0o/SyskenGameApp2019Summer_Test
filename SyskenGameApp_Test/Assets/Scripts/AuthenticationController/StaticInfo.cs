@@ -8,4 +8,6 @@ public static class StaticInfo{
     public static List<Item> items = new List<Item>();
     public static string callback = "";
     public static List<string> myCustom;
+    public static string playerName = "Player";
+    public static bool win;
 }

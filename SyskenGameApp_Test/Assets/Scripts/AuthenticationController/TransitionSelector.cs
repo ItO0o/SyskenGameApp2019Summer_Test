@@ -12,7 +12,7 @@ public class TransitionSelector : MonoBehaviour {
     void Start () {
         try
         {
-            //GameObject.Find("Text").GetComponent<Text>().text = Application.dataPath + "/" + SAVE_FILE_PATH;
+        //GameObject.Find("Text").GetComponent<Text>().text = Application.dataPath + "/" + SAVE_FILE_PATH;
         var info = new FileInfo(Application.dataPath + "/" + SAVE_FILE_PATH);
         var reader = new StreamReader(info.OpenRead());
         var json = reader.ReadToEnd();
