@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AuthenticationController/StaticInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/ItemDetail.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="9" Column="19" />
-      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="23" Column="1" />
-      <File FileName="Assets/Scripts/Photon/PhotonBattleManager.cs" Line="8" Column="63" />
-      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="12" Column="19" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Photon/ConnectionPhoton.cs" Line="16" Column="6" />
-      <File FileName="Assets/Scripts/UI/PrintResult.cs" Line="9" Column="19" />
+      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" />
+      <File FileName="Assets/Scripts/Photon/PhotonBattleManager.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="9" Column="24" />
+      <File FileName="Assets/Scripts/Photon/ConnectionPhoton.cs" Line="20" Column="21" />
+      <File FileName="Assets/Scripts/UI/PrintResult.cs" />
       <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="13" Column="2" />
-      <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" Line="14" Column="31" />
-      <File FileName="Assets/GameSparks/Platforms/DefaultPlatform.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" />
+      <File FileName="Assets/GameSparks/Platforms/DefaultPlatform.cs" />
       <File FileName="Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs" Line="2042" Column="1" />
+      <File FileName="Assets/Scripts/UI/CustomPartsView.cs" Line="31" Column="34" />
+      <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="22" Column="65" />
+      <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,10 +35,11 @@
                   <Node name="Code" expanded="True" />
                 </Node>
               </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="ItemDetailText" expanded="True" />
+              </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="AuthenticationController" expanded="True">
-                  <Node name="StaticInfo.cs" selected="True" />
-                </Node>
+                <Node name="AuthenticationController" expanded="True" />
                 <Node name="BattleSystem" expanded="True" />
                 <Node name="CustomSystem" expanded="True" />
                 <Node name="DataManager" expanded="True" />
@@ -43,7 +48,9 @@
                 </Node>
                 <Node name="Photon" expanded="True" />
                 <Node name="Player" expanded="True" />
-                <Node name="UI" expanded="True" />
+                <Node name="UI" expanded="True">
+                  <Node name="ItemDetail.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -58,7 +65,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="60d13740-5a0c-4933-90ef-db420cb027a0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de4d2a56-a01c-4e26-9db1-e8bb9d1cdc19" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

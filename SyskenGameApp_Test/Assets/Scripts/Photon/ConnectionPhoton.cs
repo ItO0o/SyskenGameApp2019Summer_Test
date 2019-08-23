@@ -16,7 +16,7 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
     }
 
     private void Start() {
-        roomName = ""
+        roomName = "";
         roomCnt = 1;
         searchRoomName = "room";
         // PhotonServerSettingsに設定した内容を使ってマスターサーバーへ接続する

@@ -4,10 +4,12 @@ using UnityEngine;
 using GameSparks.Api;
 using GameSparks.Api.Requests;
 using GameSparks.Api.Responses;
+using UnityEngine.UI;
 
 public class TesTes : MonoBehaviour {
-    private void Update() {
-        Debug.Log(StaticInfo.items.Count);
+    private void Start() {
+       GameObject instObj = Instantiate(Resources.Load<GameObject>("Part_Button"), new Vector3(GameObject.Find("Canvas").transform.position.x, GameObject.Find("Canvas").transform.position.y, 0), Quaternion.identity, GameObject.Find("Canvas").transform);
+        instObj.AddComponent<ItemDetail>();
     }
     // Use this for initialization
     //void Start () {
