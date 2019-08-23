@@ -435,6 +435,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 54
@@ -1170,7 +1172,7 @@ ScriptsOnlyBuild:
     className: FirstAuthentication
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 61fd55811202efac98c9dd5e9c5aa4cd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Item1
@@ -1890,7 +1892,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 6a79ff8ba82f14712b1e8c5f20e7d946
+      Hash: f774b6457a2ce6eeaf9c72c802a70ae7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletAction
@@ -2194,6 +2196,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemDetail
   platform: 2
   scenePathNames:
   - Assets/Scenes/Top.unity

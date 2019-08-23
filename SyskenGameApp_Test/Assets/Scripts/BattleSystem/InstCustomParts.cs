@@ -12,7 +12,7 @@ public class InstCustomParts : MonoBehaviour {
         li.Load();
         float y = 0;
         foreach (string s in StaticInfo.myCustom) {
-            GameObject instParts = PhotonNetwork.Instantiate(s, new Vector3(player.transform.position.x, player.transform.position.y + y, 0), new Quaternion(0, 180, 0, 0));
+            GameObject instParts = PhotonNetwork.Instantiate(s, new Vector3(player.transform.position.x, player.transform.position.y + y, 0), Quaternion.Euler(player.transform.forward));
             instParts.transform.parent = player.transform.Find("CustomParts").transform;
             y++;
         }

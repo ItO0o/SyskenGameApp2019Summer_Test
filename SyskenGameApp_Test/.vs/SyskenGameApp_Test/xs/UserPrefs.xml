@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/ItemDetail.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemAction/Item1/Item1.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="9" Column="19" />
       <File FileName="Assets/Scripts/Photon/InstPlayers.cs" />
       <File FileName="Assets/Scripts/Player/PlayerMove.cs" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" />
-      <File FileName="Assets/Scripts/Photon/PhotonBattleManager.cs" />
+      <File FileName="Assets/Scripts/Photon/PhotonBattleManager.cs" Line="10" Column="1" />
       <File FileName="Assets/Scripts/BattleSystem/Judge.cs" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="9" Column="24" />
       <File FileName="Assets/Scripts/Photon/ConnectionPhoton.cs" Line="20" Column="21" />
       <File FileName="Assets/Scripts/UI/PrintResult.cs" />
       <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="13" Column="2" />
       <File FileName="Assets/Scripts/DataManager/StartUpDataLoad.cs" />
-      <File FileName="Assets/GameSparks/Platforms/DefaultPlatform.cs" />
+      <File FileName="Assets/GameSparks/Platforms/DefaultPlatform.cs" Line="1" Column="1" />
       <File FileName="Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs" Line="2042" Column="1" />
       <File FileName="Assets/Scripts/UI/CustomPartsView.cs" Line="31" Column="34" />
-      <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="22" Column="65" />
+      <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="25" Column="65" />
       <File FileName="Assets/Scripts/DataManager/LoadData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="17" Column="59" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="38" Column="10" />
       <File FileName="Assets/Scripts/AuthenticationController/TransitionSelector.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/OutOfGanchu.cs" Line="7" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -44,13 +45,13 @@
                 <Node name="CustomSystem" expanded="True" />
                 <Node name="DataManager" expanded="True" />
                 <Node name="ItemAction" expanded="True">
-                  <Node name="Item1" expanded="True" />
+                  <Node name="Item1" expanded="True">
+                    <Node name="Item1.cs" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="Photon" expanded="True" />
                 <Node name="Player" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="ItemDetail.cs" selected="True" />
-                </Node>
+                <Node name="UI" expanded="True" />
               </Node>
             </Node>
           </Node>
