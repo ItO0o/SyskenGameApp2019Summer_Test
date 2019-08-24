@@ -36,6 +36,7 @@ public class BulletAction : MonoBehaviour {
                 myShip.GetComponent<PlayerBattleStatus>().hp -= atk;
             }
         }
+
         if (collision.transform.name.Contains("Item1") == false && this.GetComponent<PhotonView>().IsMine) {
             PhotonNetwork.Destroy(this.gameObject);
         }
