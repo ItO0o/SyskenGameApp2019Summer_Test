@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   speed: 100
+  maxHP: 100
 --- !u!114 &6402929694845702019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 3804583048995880646}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f2d2161a6ae064d8dbead4c3e59d68cd, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - GameSparksSettings
     - GameSparksUnity
     - HideStart
+    - InitGame
     - InstCustomParts
     - InstPlayers
     - Item1
@@ -118,11 +119,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 12830}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13162}
+    - Class: 114
+      Script: {instanceID: 13202}
+    - Class: 114
+      Script: {instanceID: 23286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -197,7 +202,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -254,9 +259,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 13112}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,7 +304,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11042}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -340,9 +345,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13170}
+      Script: {instanceID: 13172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -399,7 +404,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -530,21 +535,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 12774}
-    - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12776}
     - Class: 114
       Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13008}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 13112}
+      Script: {instanceID: 13010}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 13154}
+    - Class: 114
+      Script: {instanceID: 13162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1532,7 +1537,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: d853ec1831287f524138e342e86fb59b
+      Hash: e15fe096fd10572e90ddd33a3b9428da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerBattleStatus
@@ -1874,6 +1879,12 @@ ScriptsOnlyBuild:
     className: NetworkDiscovery
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemDetail
+  - hash:
+      serializedVersion: 2
       Hash: 893dbdbfe611d62e230a686ea89f1efd
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
@@ -2201,7 +2212,13 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ItemDetail
+    className: HPSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InitGame
   platform: 2
   scenePathNames:
   - Assets/Scenes/Top.unity

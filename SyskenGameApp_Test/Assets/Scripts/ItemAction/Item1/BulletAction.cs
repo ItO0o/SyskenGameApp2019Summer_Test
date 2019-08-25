@@ -13,6 +13,7 @@ public class BulletAction : MonoBehaviour {
     GameObject myShip;
     private void Start() {
         myShip = GameObject.Find(StaticInfo.playerName);
+        Instantiate(Resources.Load("FireSmork"),new Vector3(this.transform.position.x, this.transform.position.y + 1, this.transform.position.z),Quaternion.identity);
     }
 
     private void Update() {
@@ -35,6 +36,8 @@ public class BulletAction : MonoBehaviour {
             if (!this.GetComponent<PhotonView>().IsMine && collision.gameObject.GetComponent<PhotonView>().IsMine) {
                 myShip.GetComponent<PlayerBattleStatus>().hp -= atk;
             }
+
+            Instantiate<GameObject>(Resources.Load<GameObject>("Explosion"),this.transform.position,Quaternion.identity);
         }
 
         if (collision.transform.name.Contains("Item1") == false && this.GetComponent<PhotonView>().IsMine) {

@@ -26,4 +26,16 @@ public class PhotonBattleManager : MonoBehaviourPunCallbacks {
             Debug.Log("Opponent leave from room");
         //}
     }
+
+    public void Update() {
+        ExistEnemy();
+    }
+
+    public void ExistEnemy() {
+        if (StaticInfo.gameReady == false) {
+            if (GameObject.Find("Kongo(Clone)") != null) {
+                StaticInfo.gameReady = true;
+            }
+        }
+    }
 }

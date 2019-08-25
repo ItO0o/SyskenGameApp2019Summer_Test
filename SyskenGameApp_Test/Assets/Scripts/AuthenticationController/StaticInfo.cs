@@ -10,4 +10,5 @@ public static class StaticInfo{
     public static List<string> myCustom;
     public static string playerName = "Player";
     public static bool win;
+	public static bool gameReady = false;
 }

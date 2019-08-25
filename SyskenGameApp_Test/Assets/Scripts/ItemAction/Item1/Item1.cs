@@ -8,10 +8,17 @@ public class Item1 : MonoBehaviour {
     GameObject instObj;
     public float timeOut = 5;
     private float timeElapsed;
+    bool tempCheck;
+    private void Start() {
+        this.transform.localScale = new Vector3(this.transform.localScale.x,this.transform.localScale.y,this.transform.localScale.z);
+        this.transform.rotation = new Quaternion(this.transform.rotation.x, this.transform.rotation.y  + 180, this.transform.rotation.z, this.transform.rotation.w);
+    }
 
     private void Update() {
-
-        if (this.GetComponent<PhotonView>().IsMine == false) {
+        if (this.GetComponent<CheckSetted>().setted == true && tempCheck == false) {
+            this.transform.parent = GameObject.Find(StaticInfo.playerName).transform.Find("CustomParts");
+        }
+        if (this.GetComponent<PhotonView>().IsMine == false || this.GetComponent<CheckSetted>().setted == false) {
             return;
         }
         timeElapsed += Time.deltaTime;
@@ -19,22 +26,23 @@ public class Item1 : MonoBehaviour {
         if (timeElapsed >= timeOut) {
             timeElapsed = 0.0f;
 
-            instObj = PhotonNetwork.Instantiate("Bullet_01", this.transform.position, Quaternion.identity);
-            //instObj.transform.parent = this.transform;
+            instObj = PhotonNetwork.Instantiate("Bullet_01", this.transform.position + (this.transform.right), Quaternion.identity);
+            
             if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
-                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(this.transform.transform.right.x * 500, 200, 0));
+                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(this.transform.transform.right.x * 500, this.transform.transform.up.x * 200, 0));
             }
             if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom) {
-                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(-this.transform.transform.right.x * 500, 200, 0));
+                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(-this.transform.transform.right.x * 500, this.transform.transform.up.x * 200, 0));
             }
         }
         if (this.transform.position.y < -10) {
             PhotonNetwork.Destroy(this.gameObject);
         }
+        tempCheck = this.GetComponent<CheckSetted>().setted;
     }
     private void LateUpdate() {
         if (GetComponent<PhotonView>().IsMine) {
-            this.transform.rotation = new Quaternion(0, 0, this.transform.rotation.z, 0);
+            //this.transform.rotation = new Quaternion(this.transform.rotation.x, 0, this.transform.rotation.y, this.transform.rotation.w);
         }
     }
 }
