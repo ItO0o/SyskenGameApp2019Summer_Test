@@ -21,9 +21,15 @@ public class Judge : MonoBehaviourPunCallbacks {
                 ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
                 if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
                     hashtable["Judge"] = ConnectionPhoton.SearchState.JoinRoom.ToString();
-                } else {
+                } else if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom) {
                     hashtable["Judge"] = ConnectionPhoton.SearchState.CreateRoom.ToString();
                 }
+                PhotonNetwork.CurrentRoom.SetCustomProperties(hashtable);
+            }
+
+            if (Timer.time > 120) {
+                ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+                hashtable["Judge"] = "TimeOver";
                 PhotonNetwork.CurrentRoom.SetCustomProperties(hashtable);
             }
         }
@@ -33,6 +39,10 @@ public class Judge : MonoBehaviourPunCallbacks {
         if (propertiesThatChanged.TryGetValue("Judge", out object value)) {
             if (value.ToString().Equals(ConnectionPhoton.searchState.ToString())) {
                 StaticInfo.win = true;
+            } else if (value.ToString().Equals("TimeOver")) {
+                SceneManager.LoadScene("TimeOver");
+                PhotonNetwork.LeaveRoom();
+                return;
             } else {
                 StaticInfo.win = false;
             }
@@ -40,5 +50,4 @@ public class Judge : MonoBehaviourPunCallbacks {
             SceneManager.LoadScene("Result");
         }
     }
-
 }

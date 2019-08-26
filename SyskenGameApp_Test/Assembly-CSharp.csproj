@@ -208,6 +208,8 @@
     <Compile Include="Assets\Scripts\BattleSystem\Judge.cs" />
     <Compile Include="Assets\Scripts\BattleSystem\PartsSetter.cs" />
     <Compile Include="Assets\Scripts\BattleSystem\PlayerBattleStatus.cs" />
+    <Compile Include="Assets\Scripts\BattleSystem\Timer.cs" />
+    <Compile Include="Assets\Scripts\CustomSystem\CustomCount.cs" />
     <Compile Include="Assets\Scripts\CustomSystem\CustomFuso.cs" />
     <Compile Include="Assets\Scripts\CustomSystem\DeleteItem.cs" />
     <Compile Include="Assets\Scripts\CustomSystem\ViewMyFuso.cs" />
@@ -217,7 +219,6 @@
     <Compile Include="Assets\Scripts\DataManager\Serialization.cs" />
     <Compile Include="Assets\Scripts\DataManager\StartUpDataLoad.cs" />
     <Compile Include="Assets\Scripts\DataManager\TransitionInventory.cs" />
-    <Compile Include="Assets\Scripts\GS2Test.cs" />
     <Compile Include="Assets\Scripts\ItemAction\CheckSetted.cs" />
     <Compile Include="Assets\Scripts\ItemAction\Item1\BulletAction.cs" />
     <Compile Include="Assets\Scripts\ItemAction\Item1\Item1.cs" />

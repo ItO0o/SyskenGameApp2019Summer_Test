@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animation/Smork.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CustomSystem/CustomCount.cs">
     <Files>
-      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="31" Column="91" />
-      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="13" Column="19" />
-      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/ItemAction/CheckSetted.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/CustomSystem/ViewMyFuso.cs" Line="29" Column="105" />
-      <File FileName="Assets/Scripts/ItemAction/Item3/Item3.cs" Line="13" Column="61" />
-      <File FileName="Assets/Scripts/Animation/Smork.cs" Line="16" Column="37" />
-      <File FileName="Assets/Scripts/Animation/Explosion.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="35" Column="149" />
+      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="18" Column="87" />
+      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" />
+      <File FileName="Assets/Scripts/ItemAction/CheckSetted.cs" />
+      <File FileName="Assets/Scripts/CustomSystem/ViewMyFuso.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item3/Item3.cs" />
+      <File FileName="Assets/Scripts/Animation/Smork.cs" />
+      <File FileName="Assets/Scripts/Animation/Explosion.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/Timer.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/InitGame.cs" Line="12" Column="24" />
+      <File FileName="Assets/Scripts/AuthenticationController/StaticInfo.cs" Line="5" Column="21" />
+      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="33" Column="74" />
+      <File FileName="Assets/Scripts/Photon/InstPlayers.cs" Line="18" Column="109" />
+      <File FileName="Assets/Scripts/CustomSystem/CustomFuso.cs" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/CustomSystem/CustomCount.cs" Line="7" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,15 +24,17 @@
           <Node name="SyskenGameApp_Test" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Animation" expanded="True">
-                  <Node name="Smork.cs" selected="True" />
-                </Node>
+                <Node name="Animation" expanded="True" />
+                <Node name="AuthenticationController" expanded="True" />
                 <Node name="BattleSystem" expanded="True" />
-                <Node name="CustomSystem" expanded="True" />
+                <Node name="CustomSystem" expanded="True">
+                  <Node name="CustomCount.cs" selected="True" />
+                </Node>
                 <Node name="ItemAction" expanded="True">
                   <Node name="Item1" expanded="True" />
                   <Node name="Item3" expanded="True" />
                 </Node>
+                <Node name="Photon" expanded="True" />
               </Node>
             </Node>
           </Node>

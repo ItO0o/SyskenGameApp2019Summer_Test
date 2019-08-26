@@ -11,7 +11,7 @@ public class Item1 : MonoBehaviour {
     bool tempCheck;
     private void Start() {
         this.transform.localScale = new Vector3(this.transform.localScale.x,this.transform.localScale.y,this.transform.localScale.z);
-        this.transform.rotation = new Quaternion(this.transform.rotation.x, this.transform.rotation.y  + 180, this.transform.rotation.z, this.transform.rotation.w);
+        //this.transform.rotation = new Quaternion(this.transform.rotation.x, this.transform.rotation.y  + 180, this.transform.rotation.z, this.transform.rotation.w);
     }
 
     private void Update() {
@@ -29,10 +29,10 @@ public class Item1 : MonoBehaviour {
             instObj = PhotonNetwork.Instantiate("Bullet_01", this.transform.position + (this.transform.right), Quaternion.identity);
             
             if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
-                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(this.transform.transform.right.x * 500, this.transform.transform.up.x * 200, 0));
+                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(this.transform.transform.right.x * 500, this.transform.transform.right.y * 200, 0));
             }
             if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.JoinRoom) {
-                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(-this.transform.transform.right.x * 500, this.transform.transform.up.x * 200, 0));
+                instObj.GetComponent<Rigidbody2D>().AddForce(new Vector3(-this.transform.transform.right.x * 500, this.transform.transform.right.y * 200, 0));
             }
         }
         if (this.transform.position.y < -10) {

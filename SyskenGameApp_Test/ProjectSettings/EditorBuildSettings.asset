@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Login.unity
     guid: df0eb678c07aa954cbbe14915faf5833
   - enabled: 1
+    path: Assets/Scenes/TimeOver.unity
+    guid: e61f698416aef453d9848852c6904647
+  - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: 561698ff13f944fc091b1f44d156bbbc
   - enabled: 1

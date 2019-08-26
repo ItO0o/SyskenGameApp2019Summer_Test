@@ -13,7 +13,14 @@ public class InstCustomParts : MonoBehaviour {
         li.Load();
         float y = 0;
         foreach (string s in StaticInfo.myCustom) {
-            GameObject instParts = PhotonNetwork.Instantiate(s, new Vector3(player.transform.position.x, player.transform.position.y + y + 100, 0), Quaternion.Euler(player.transform.forward));
+            GameObject instParts;
+            if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
+                instParts = PhotonNetwork.Instantiate(s, new Vector3(player.transform.position.x, player.transform.position.y + y + 100, 0), new Quaternion(0, 0, 0, 0));
+                instParts.transform.rotation = Quaternion.Euler(new Vector3(0,180,0));
+            } else {
+                instParts = PhotonNetwork.Instantiate(s, new Vector3(player.transform.position.x, player.transform.position.y + y + 100, 0), new Quaternion(0, 0, 0, 0));
+            }
+            //Debug.Log(instParts.transform.localRotation);
             //instParts.transform.parent = player.transform.Find("CustomParts").transform;
             try {
                 DestroyImmediate(instParts.GetComponent<Rigidbody2D>());

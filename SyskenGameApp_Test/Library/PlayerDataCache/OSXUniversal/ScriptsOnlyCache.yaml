@@ -3,10 +3,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BulletAction
     - ButtonWaitForCallbacl
+    - CheckSetted
     - ConnectionPhoton
     - CustomFuso
     - CustomPartsView
     - DeleteItem
+    - Explosion
     - FadeAnimation
     - FirstAuthentication
     - GameSparksSettings
@@ -16,9 +18,11 @@ ScriptsOnlyBuild:
     - InstCustomParts
     - InstPlayers
     - Item1
+    - Item3
     - Judge
     - LocalInventory
     - OutOfGanchu
+    - PartsSetter
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
     - Photon.Pun.Demo.Asteroids.Spaceship
@@ -33,14 +37,14 @@ ScriptsOnlyBuild:
     - PlayerMove
     - PrintResult
     - SendData
+    - Smork
     - StartUpDataLoad
     - StatsText
+    - Timer
     - TransitionInventory
     - TransitionSelector
     - TrantisionScene
     - ViewMyFuso
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -128,6 +132,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13202}
     - Class: 114
       Script: {instanceID: 23286}
+    - Class: 114
+      Script: {instanceID: 45752}
+    - Class: 114
+      Script: {instanceID: 100028}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -362,6 +370,55 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/TimeOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9828}
+    - Class: 114
+      Script: {instanceID: 10114}
+    - Class: 114
+      Script: {instanceID: 10168}
+    - Class: 114
+      Script: {instanceID: 11042}
+    - Class: 114
+      Script: {instanceID: 11676}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 12432}
+    - Class: 114
+      Script: {instanceID: 13118}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Title.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -449,6 +506,8 @@ ScriptsOnlyBuild:
     - Class: 60
       Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -550,6 +609,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13154}
     - Class: 114
       Script: {instanceID: 13162}
+    - Class: 114
+      Script: {instanceID: 43226}
+    - Class: 114
+      Script: {instanceID: 45920}
+    - Class: 114
+      Script: {instanceID: 56696}
+    - Class: 114
+      Script: {instanceID: 66802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1381,7 +1448,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPropertiesListedInLobbyProperty
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 0e4291ce0a53608b7ef45fd91d84f9ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InstCustomParts
@@ -2219,12 +2286,49 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InitGame
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explosion
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PartsSetter
+  - hash:
+      serializedVersion: 2
+      Hash: 48de7415df346ea6ee55105d70dd088a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckSetted
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Item3
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Smork
+  - hash:
+      serializedVersion: 2
+      Hash: 75c20e956ec4b416c451d92f0947ecb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   platform: 2
   scenePathNames:
   - Assets/Scenes/Top.unity
   - Assets/Scenes/MatchMaking.unity
   - Assets/Scenes/Title.unity
   - Assets/Scenes/Login.unity
+  - Assets/Scenes/TimeOver.unity
   - Assets/Scenes/Battle.unity
   - Assets/Scenes/Custom.unity
   - Assets/Scenes/Result.unity

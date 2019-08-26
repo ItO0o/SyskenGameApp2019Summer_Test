@@ -11,13 +11,13 @@ public class PartsSetter : MonoBehaviour
 
     InstCustomParts photonCont;
     GameObject now;
-    int index = 1;
+    int index = 0;
     GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         photonCont = GameObject.Find("Photon_Controller").GetComponent<InstCustomParts>();
-        now = photonCont.parts[index];
+        now = photonCont.parts[0];
         player = GameObject.Find(StaticInfo.playerName);
     }
 
@@ -28,10 +28,10 @@ public class PartsSetter : MonoBehaviour
             index++;
             if (index == StaticInfo.myCustom.Count) {
                 DestroyImmediate(this.gameObject);
+                return;
             }
             now = photonCont.parts[index];
             now.transform.position = new Vector3(player.transform.position.x,player.transform.position.y + 5,player.transform.position.z);
-
         }
         if (Input.GetMouseButton(0)) {
             // Vector3でマウス位置座標を取得する
@@ -45,7 +45,6 @@ public class PartsSetter : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0)) {
             now.AddComponent<Rigidbody2D>();
-            
         }
     }
 }

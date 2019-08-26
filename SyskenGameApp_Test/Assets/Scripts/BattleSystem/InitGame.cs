@@ -9,6 +9,7 @@ public class InitGame : MonoBehaviour
     void Awake()
     {
         StaticInfo.gameReady = false;
+        Timer.time = 0;
     }
 
     // Update is called once per frame
