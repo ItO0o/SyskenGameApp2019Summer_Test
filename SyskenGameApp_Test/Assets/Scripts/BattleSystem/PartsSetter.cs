@@ -19,11 +19,19 @@ public class PartsSetter : MonoBehaviour
         photonCont = GameObject.Find("Photon_Controller").GetComponent<InstCustomParts>();
         now = photonCont.parts[0];
         player = GameObject.Find(StaticInfo.playerName);
+        if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
+            now.transform.position = new Vector3(5, player.transform.position.y + 5, player.transform.position.z);
+        } else {
+            now.transform.position = new Vector3(-5, player.transform.position.y + 5, player.transform.position.z);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (StaticInfo.gameReady == false) {
+            return;
+        }
         if (now.GetComponent<CheckSetted>().setted || now.transform.position.y < - 10) {
             index++;
             if (index == StaticInfo.myCustom.Count) {
@@ -31,7 +39,11 @@ public class PartsSetter : MonoBehaviour
                 return;
             }
             now = photonCont.parts[index];
-            now.transform.position = new Vector3(player.transform.position.x,player.transform.position.y + 5,player.transform.position.z);
+            if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
+                now.transform.position = new Vector3(5, player.transform.position.y + 5, player.transform.position.z);
+            } else {
+                now.transform.position = new Vector3(-5, player.transform.position.y + 5, player.transform.position.z);
+            }
         }
         if (Input.GetMouseButton(0)) {
             if (now.GetComponent<Rigidbody2D>() != null) {

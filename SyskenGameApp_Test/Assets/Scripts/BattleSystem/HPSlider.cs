@@ -39,9 +39,14 @@ public class HPSlider : MonoBehaviour {
             }
             SetSlider(i);
             tempHP[i] = ship[i].GetComponent<PlayerBattleStatus>().hp;
-            sliderObj[i].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[i].transform.position.x, ship[i].transform.position.y + 5, 0));
         }
-
+        //if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
+        //    sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x - 10, ship[0].transform.position.y + 5, 0));
+        //    sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x + 10, ship[1].transform.position.y + 5, 0));
+        //} else {
+        //    sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x + 10, ship[0].transform.position.y + 5, 0));
+        //    sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x - 10, ship[1].transform.position.y + 5, 0));
+        //}
     }
 
     void SetSlider(int index) {

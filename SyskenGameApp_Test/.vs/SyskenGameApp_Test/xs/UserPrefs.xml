@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TextResource/ItemDetailText/Item3.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/YourAllow.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem/InitGame.cs" Line="19" Column="1" />
       <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="7" Column="37" />
       <File FileName="Assets/Scripts/BattleSystem/GetEnemyItem.cs" Line="25" Column="49" />
       <File FileName="Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" Line="2086" Column="1" />
-      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" Line="26" Column="10" />
       <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="24" Column="65" />
       <File FileName="Assets/Scripts/ItemAction/Item3/Item3.cs" Line="7" Column="37" />
       <File FileName="Assets/Scripts/BattleSystem/Timer.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DataManager/LocalInventory.cs" Line="28" Column="3" />
       <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="11" Column="42" />
-      <File FileName="Assets/TextResource/ItemDetailText/Item1.txt" Line="3" Column="6" />
-      <File FileName="Assets/TextResource/ItemDetailText/Item3.txt" Line="1" Column="5" />
+      <File FileName="Assets/Scripts/Player/PlayerMove.cs" Line="40" Column="106" />
+      <File FileName="Assets/Scripts/BattleSystem/HPSlider.cs" Line="39" Column="14" />
+      <File FileName="Assets/Scripts/UI/YourAllow.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -33,12 +34,13 @@
                   <Node name="Item1" expanded="True" />
                   <Node name="Item3" expanded="True" />
                 </Node>
-                <Node name="UI" expanded="True" />
+                <Node name="Player" expanded="True" />
+                <Node name="UI" expanded="True">
+                  <Node name="YourAllow.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="TextResource" expanded="True">
-                <Node name="ItemDetailText" expanded="True">
-                  <Node name="Item3.txt" selected="True" />
-                </Node>
+                <Node name="ItemDetailText" expanded="True" />
               </Node>
             </Node>
           </Node>

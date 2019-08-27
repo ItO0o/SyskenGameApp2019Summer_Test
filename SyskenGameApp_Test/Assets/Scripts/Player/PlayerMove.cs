@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour {
     private PhotonView m_photonView;
     void Start() {
         m_photonView = this.GetComponent<PhotonView>();
-       
+
     }
 
     //#if UNITY_EDITOR || UNITY_STANDALONE_WIN
@@ -23,23 +23,26 @@ public class PlayerMove : MonoBehaviour {
     //#endif
 
     private void Move() {
+
         if (!m_photonView.IsMine) {
             return;
         }
 
         if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
-            if (Input.GetKey(KeyCode.D) && acceleration >  -backMaxSpeed) {
+            if (Input.GetKey(KeyCode.D) && acceleration > -backMaxSpeed) {
                 this.acceleration -= backAcceleration;
-            }
-            if (Input.GetKey(KeyCode.A) && acceleration < forwardMaxSpeed) {
+            } else if (Input.GetKey(KeyCode.A) && acceleration < forwardMaxSpeed && this.transform.position.x >= 6.5f) {
                 this.acceleration += forwardAcceleration;
+            } else if (this.transform.position.x < 6.5f) {
+                this.acceleration = 0;
             }
         } else {
-            if (Input.GetKey(KeyCode.D) && acceleration < forwardMaxSpeed) {
+            if (Input.GetKey(KeyCode.D) && acceleration < forwardMaxSpeed && this.transform.position.x <= -6.5f) {
                 this.acceleration += forwardAcceleration;
-            }
-            if (Input.GetKey(KeyCode.A) && acceleration > -backMaxSpeed) {
+            } else if (Input.GetKey(KeyCode.A) && acceleration > -backMaxSpeed) {
                 this.acceleration -= backAcceleration;
+            } else if (this.transform.position.x > -6.5f) {
+                this.acceleration = 0;
             }
         }
 
