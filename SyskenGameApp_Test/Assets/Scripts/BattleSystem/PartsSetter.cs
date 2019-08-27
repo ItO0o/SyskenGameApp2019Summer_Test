@@ -55,8 +55,10 @@ public class PartsSetter : MonoBehaviour
             position.z = 10f;
             // マウス位置座標をスクリーン座標からワールド座標に変換する
             screenToWorldPointPosition = Camera.main.ScreenToWorldPoint(position);
-            // ワールド座標に変換されたマウス座標を代入
-            now.transform.position = new Vector3(screenToWorldPointPosition.x, player.transform.position.y + 5,0);
+            if (screenToWorldPointPosition.x < player.transform.position.x + 6 && screenToWorldPointPosition.x > player.transform.position.x - 6) {
+                // ワールド座標に変換されたマウス座標を代入
+                now.transform.position = new Vector3(screenToWorldPointPosition.x, player.transform.position.y + 5, 0);
+            }
         }
         if (Input.GetMouseButtonUp(0) && now.GetComponent<Rigidbody2D>() == null) {
             now.AddComponent<Rigidbody2D>();

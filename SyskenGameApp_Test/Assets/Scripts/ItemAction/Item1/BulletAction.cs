@@ -41,6 +41,8 @@ public class BulletAction : MonoBehaviour {
         }
 
         if (collision.transform.name.Contains("Item1") == false && this.GetComponent<PhotonView>().IsMine) {
+            //GameObject inst = Instantiate<GameObject>(Resources.Load<GameObject>("Damage_Text").gameObject, GameObject.Find("Ignore_Canvas").transform);
+            //inst.transform.position = Camera.main.WorldToScreenPoint(collision.transform.position);
             PhotonNetwork.Destroy(this.gameObject);
         }
     }

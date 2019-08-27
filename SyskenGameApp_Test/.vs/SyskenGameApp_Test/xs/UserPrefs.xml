@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/YourAllow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemAction/Item1/BulletAction.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem/InitGame.cs" Line="19" Column="1" />
       <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="1" Column="1" />
@@ -14,7 +14,8 @@
       <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="11" Column="42" />
       <File FileName="Assets/Scripts/Player/PlayerMove.cs" Line="40" Column="106" />
       <File FileName="Assets/Scripts/BattleSystem/HPSlider.cs" Line="39" Column="14" />
-      <File FileName="Assets/Scripts/UI/YourAllow.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/UI/YourAllow.cs" Line="14" Column="10" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="48" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,13 +32,13 @@
                 <Node name="BattleSystem" expanded="True" />
                 <Node name="DataManager" expanded="True" />
                 <Node name="ItemAction" expanded="True">
-                  <Node name="Item1" expanded="True" />
+                  <Node name="Item1" expanded="True">
+                    <Node name="BulletAction.cs" selected="True" />
+                  </Node>
                   <Node name="Item3" expanded="True" />
                 </Node>
                 <Node name="Player" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="YourAllow.cs" selected="True" />
-                </Node>
+                <Node name="UI" expanded="True" />
               </Node>
               <Node name="TextResource" expanded="True">
                 <Node name="ItemDetailText" expanded="True" />

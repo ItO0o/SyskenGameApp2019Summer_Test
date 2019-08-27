@@ -26,7 +26,16 @@ public class HPSlider : MonoBehaviour {
             slider[i] = sliderObj[i].GetComponent<Slider>();
             back[i] = sliderObj[i].transform.GetChild(0).GetComponent<Image>();
         }
-       
+        if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
+            //sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x - 10, ship[0].transform.position.y + 5, 0));
+            //sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x + 10, ship[1].transform.position.y + 5, 0));
+        } else {
+            Vector3 temp = sliderObj[0].transform.position;
+            sliderObj[0].transform.position = sliderObj[1].transform.position;
+            sliderObj[1].transform.position = temp;
+            //sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x + 10, ship[0].transform.position.y + 5, 0));
+            //sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x - 10, ship[1].transform.position.y + 5, 0));
+        }
     }
 
     // Update is called once per frame
@@ -40,13 +49,6 @@ public class HPSlider : MonoBehaviour {
             SetSlider(i);
             tempHP[i] = ship[i].GetComponent<PlayerBattleStatus>().hp;
         }
-        //if (ConnectionPhoton.searchState == ConnectionPhoton.SearchState.CreateRoom) {
-        //    sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x - 10, ship[0].transform.position.y + 5, 0));
-        //    sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x + 10, ship[1].transform.position.y + 5, 0));
-        //} else {
-        //    sliderObj[0].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[0].transform.position.x + 10, ship[0].transform.position.y + 5, 0));
-        //    sliderObj[1].transform.position = Camera.main.WorldToScreenPoint(new Vector3(ship[1].transform.position.x - 10, ship[1].transform.position.y + 5, 0));
-        //}
     }
 
     void SetSlider(int index) {
