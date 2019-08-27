@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - ButtonWaitForCallbacl
     - CheckSetted
     - ConnectionPhoton
+    - CustomCount
     - CustomFuso
     - CustomPartsView
     - DeleteItem
@@ -13,6 +14,7 @@ ScriptsOnlyBuild:
     - FirstAuthentication
     - GameSparksSettings
     - GameSparksUnity
+    - GetEnemyItem
     - HideStart
     - InitGame
     - InstCustomParts
@@ -45,6 +47,8 @@ ScriptsOnlyBuild:
     - TransitionSelector
     - TrantisionScene
     - ViewMyFuso
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -211,6 +215,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12628}
     - Class: 114
       Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 116546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -356,11 +362,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13118}
     - Class: 114
       Script: {instanceID: 13172}
+    - Class: 114
+      Script: {instanceID: 138514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1574,12 +1584,6 @@ ScriptsOnlyBuild:
     className: ToggleExpand
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GS2Test
-  - hash:
-      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -2300,7 +2304,7 @@ ScriptsOnlyBuild:
     className: PartsSetter
   - hash:
       serializedVersion: 2
-      Hash: 48de7415df346ea6ee55105d70dd088a
+      Hash: 9f54e34e1a9594736722529981836189
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CheckSetted
@@ -2322,6 +2326,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomCount
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetEnemyItem
   platform: 2
   scenePathNames:
   - Assets/Scenes/Top.unity

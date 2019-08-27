@@ -24,7 +24,7 @@ public class PartsSetter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (now.GetComponent<CheckSetted>().setted) {
+        if (now.GetComponent<CheckSetted>().setted || now.transform.position.y < - 10) {
             index++;
             if (index == StaticInfo.myCustom.Count) {
                 DestroyImmediate(this.gameObject);
@@ -34,6 +34,9 @@ public class PartsSetter : MonoBehaviour
             now.transform.position = new Vector3(player.transform.position.x,player.transform.position.y + 5,player.transform.position.z);
         }
         if (Input.GetMouseButton(0)) {
+            if (now.GetComponent<Rigidbody2D>() != null) {
+                now.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+            }
             // Vector3でマウス位置座標を取得する
             position = Input.mousePosition;
             // Z軸修正
@@ -43,7 +46,7 @@ public class PartsSetter : MonoBehaviour
             // ワールド座標に変換されたマウス座標を代入
             now.transform.position = new Vector3(screenToWorldPointPosition.x, player.transform.position.y + 5,0);
         }
-        if (Input.GetMouseButtonUp(0)) {
+        if (Input.GetMouseButtonUp(0) && now.GetComponent<Rigidbody2D>() == null) {
             now.AddComponent<Rigidbody2D>();
         }
     }

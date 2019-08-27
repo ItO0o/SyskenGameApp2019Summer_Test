@@ -8,7 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class ItemDetail : MonoBehaviour, IPointerEnterHandler{
-    string SAVE_FILE_PATH = "Resources/ItemDetailText/";
+    string SAVE_FILE_PATH = "TextResource/ItemDetailText/";
     string fileName;
     int index;
     public void OnPointerEnter(PointerEventData eventData) {

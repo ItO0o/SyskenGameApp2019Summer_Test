@@ -11,4 +11,5 @@ public static class StaticInfo{
     public static string playerName = "Player";
     public static bool win;
 	public static bool gameReady = false;
+    public static List<string> enemyCustom;
 }
