@@ -30,9 +30,9 @@ public class BulletAction : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.name.Equals("Kongo(Clone)")||collision.gameObject.name.Equals(StaticInfo.playerName)) { 
-            if (this.GetComponent<PhotonView>().IsMine && !collision.gameObject.GetComponent<PhotonView>().IsMine) {
-                collision.gameObject.GetComponent<PlayerBattleStatus>().hp -= atk;
-            }
+            //if (this.GetComponent<PhotonView>().IsMine && !collision.gameObject.GetComponent<PhotonView>().IsMine) {
+            //    collision.gameObject.GetComponent<PlayerBattleStatus>().hp -= atk;
+            //}
             if (!this.GetComponent<PhotonView>().IsMine && collision.gameObject.GetComponent<PhotonView>().IsMine) {
                 myShip.GetComponent<PlayerBattleStatus>().hp -= atk;
             }

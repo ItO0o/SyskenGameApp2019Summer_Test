@@ -47,6 +47,7 @@ ScriptsOnlyBuild:
     - TransitionSelector
     - TrantisionScene
     - ViewMyFuso
+    - YourAllow
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
@@ -140,6 +141,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 45752}
     - Class: 114
       Script: {instanceID: 100028}
+    - Class: 114
+      Script: {instanceID: 172270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,6 +481,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -506,8 +511,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -1296,7 +1299,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomIsOpenToggle
   - hash:
       serializedVersion: 2
-      Hash: b474f62ed7247dd038b390b55fd75582
+      Hash: c78f9beaaf4c43bed35a69956570d723
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Judge
@@ -2338,6 +2341,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GetEnemyItem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: YourAllow
   platform: 2
   scenePathNames:
   - Assets/Scenes/Top.unity
@@ -2348,4 +2357,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Battle.unity
   - Assets/Scenes/Custom.unity
   - Assets/Scenes/Result.unity
-  playerPath: /Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/test.app
+  playerPath: /Users/k17014kk/Desktop/test.app

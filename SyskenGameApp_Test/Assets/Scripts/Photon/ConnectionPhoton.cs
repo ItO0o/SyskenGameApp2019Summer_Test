@@ -40,6 +40,8 @@ public class ConnectionPhoton : MonoBehaviourPunCallbacks {
         room.MaxPlayers = 2;
         ExitGames.Client.Photon.Hashtable customProp = new ExitGames.Client.Photon.Hashtable();
         customProp.Add("Judge", "Non");
+        customProp.Add("CreateHP", "100");
+        customProp.Add("JoinHP", "100");
         room.CustomRoomProperties = customProp;
         PhotonNetwork.CreateRoom(searchRoomName + roomCnt, room, TypedLobby.Default);
         searchState = SearchState.CreateRoom;

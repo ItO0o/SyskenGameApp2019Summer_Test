@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{6995C29F-6905-2021-A4E4-65B7C8CC3B62}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemAction/Item1/BulletAction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Library/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@2.0.1/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem/InitGame.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" Line="7" Column="37" />
-      <File FileName="Assets/Scripts/BattleSystem/GetEnemyItem.cs" Line="25" Column="49" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" Line="2086" Column="1" />
-      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" Line="26" Column="10" />
-      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" Line="24" Column="65" />
-      <File FileName="Assets/Scripts/ItemAction/Item3/Item3.cs" Line="7" Column="37" />
-      <File FileName="Assets/Scripts/BattleSystem/Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager/LocalInventory.cs" Line="28" Column="3" />
-      <File FileName="Assets/Scripts/UI/ItemDetail.cs" Line="11" Column="42" />
-      <File FileName="Assets/Scripts/Player/PlayerMove.cs" Line="40" Column="106" />
-      <File FileName="Assets/Scripts/BattleSystem/HPSlider.cs" Line="39" Column="14" />
-      <File FileName="Assets/Scripts/UI/YourAllow.cs" Line="14" Column="10" />
-      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" Line="48" Column="32" />
+      <File FileName="Assets/Scripts/BattleSystem/Judge.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/Item1.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/GetEnemyItem.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/PartsSetter.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/InstCustomParts.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item3/Item3.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/Timer.cs" />
+      <File FileName="Assets/Scripts/DataManager/LocalInventory.cs" />
+      <File FileName="Assets/Scripts/UI/ItemDetail.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/BattleSystem/HPSlider.cs" />
+      <File FileName="Assets/Scripts/UI/YourAllow.cs" />
+      <File FileName="Assets/Scripts/ItemAction/Item1/BulletAction.cs" />
+      <File FileName="Assets/Scripts/Photon/ConnectionPhoton.cs" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" />
+      <File FileName="../../../Library/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@2.0.1/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef" Line="11" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,14 +31,15 @@
               </Node>
               <Node name="Resources" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="BattleSystem" expanded="True" />
+                <Node name="BattleSystem" expanded="True">
+                  <Node name="InitGame.cs" selected="True" />
+                </Node>
                 <Node name="DataManager" expanded="True" />
                 <Node name="ItemAction" expanded="True">
-                  <Node name="Item1" expanded="True">
-                    <Node name="BulletAction.cs" selected="True" />
-                  </Node>
+                  <Node name="Item1" expanded="True" />
                   <Node name="Item3" expanded="True" />
                 </Node>
+                <Node name="Photon" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="UI" expanded="True" />
               </Node>
@@ -58,7 +61,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de4d2a56-a01c-4e26-9db1-e8bb9d1cdc19" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/k17014kk/Unity/SyskenGameApp2019Summer_Test/SyskenGameApp_Test/Assets/Scripts/BattleSystem/Judge.cs" relfile="Assets/Scripts/BattleSystem/Judge.cs" line="42" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
